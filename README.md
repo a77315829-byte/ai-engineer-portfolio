@@ -74,9 +74,9 @@ MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
 **코드·실험 근거:** [선호 추정](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/engine/estimator.py) · [평가 함수](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/engine/metric_builder.py) · [속성 검사](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/checks/summarization.py) · [비교 실험](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/experiments/compare_baselines.py) · [결과 CSV](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/experiments/results/baseline_comparison.csv)
 
 <details>
-<summary>화면 보기 — 두 결과물 비교</summary>
+<summary>화면 보기 — React 결과물 비교 (2026.09.27)</summary>
 
-![두 결과물 중 선호하는 답변 선택](https://raw.githubusercontent.com/a77315829-byte/preference-prompt-tool/master/docs/screenshots/03-compare.png)
+![선호 기반 프롬프트 생성기 — React 결과물 비교 화면](https://raw.githubusercontent.com/a77315829-byte/preference-prompt-tool/master/docs/screenshots/react-compare.png)
 
 </details>
 
@@ -171,13 +171,6 @@ MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
 - **2026 SW Start-Up Festa SW 해커톤 경진대회 총장상**, 2026.09.02 — 전역자금 플래너로 확장한 팀 프로젝트
 
 **구현 근거:** [시나리오 API 연동](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/app/src/services/scenario.service.ts) · [팀 채점 엔진](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/services/scenario-server/scoring/engine.py) · [전체 구조와 실행 안내](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/README.md)
-
-<details>
-<summary>화면 보기 — ANTITUDE</summary>
-
-![ANTITUDE 서비스 화면](https://raw.githubusercontent.com/a77315829-byte/Capstone-ver0.1/main/assets/home.png)
-
-</details>
 
 ---
 
