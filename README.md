@@ -18,6 +18,8 @@ AI 에이전트 행동 예측 모델, 선택 기반 프롬프트 생성 도구, 
 | [AI 견적 업무 보조](#03-openmoon) | 기업협력 인턴 · 초기 설계, 웹 UI, 챗봇 보완 | 업무 데이터 연계, 대화 맥락, 도구 호출 | 팀 시스템 구현 · 사내 설치·사용 안내 지원 |
 | [ANTITUDE · RAISE](#04-antitude--raise) | 5인 팀장 · 기획, 웹 개발, AI 기능 통합 | 서비스 통합, 평가 결과의 피드백 연결 | PlatCon-26 Best Paper Award · 제2저자 |
 
+**그 밖의 개발 경험:** [Unity 교육 앱 · 드론 관제 · 멀티플레이 게임 · Flutter 앱 · NLP 대회 · Android 실습](#추가-프로젝트와-개발-경험)
+
 ## 역량과 구현 근거
 
 | 역량 | 사용 기술·방법 | 대표 근거 |
@@ -174,14 +176,76 @@ MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
 
 ---
 
-## 추가 경험
+## 추가 프로젝트와 개발 경험
 
-| 프로젝트·활동 | 내용과 역할 | 근거 |
+AI 모델 개발과 함께 모바일 앱, Unity 클라이언트, 드론 관제 프로그램, 네트워크 게임을 만들며 화면·데이터·외부 시스템을 연결하는 경험을 쌓았습니다.
+
+### 05. MOLE — 3D 화학 학습 앱
+
+**2025 · 팀 프로젝트 · 논문 검색 및 공통 UI 담당**  
+Unity · C# · REST API · FastAPI 서버 연동
+
+분자 구조 탐색, 화합물 검색, 퀴즈와 논문 검색을 제공하는 Unity 기반 학습 앱입니다. 저는 **논문 검색 화면과 여러 화면에서 사용하는 공통 UI**를 맡았습니다.
+
+- 검색어 입력부터 PubMed 검색·한국어 번역 결과의 카드 표시, 상세 화면 전환까지 연결했습니다.
+- 최신순·관련도순 정렬, 로딩 및 요청 실패 안내와 탭·토글·설정·사운드 UI를 구현했습니다.
+- **2025 신한대학교 창업경진대회 금상**, 융복합지식학회 추계학술발표대회 발표 성과를 냈습니다.
+
+[저장소 및 담당 기능](https://github.com/a77315829-byte/MOLE) · [본인 담당 코드](https://github.com/a77315829-byte/MOLE/tree/main/MOLE_UNITY/Assets/Jungwoo)
+
+### 06. FLYHIGH Drone GCS — 드론 지상관제 교육 프로그램
+
+**2026.06 · 개인 프로젝트 · 단독 개발**  
+Python · Tkinter · pymavlink · ArduPilot SITL · Ollama
+
+실제 기체 없이 시뮬레이터로 비행 절차와 MAVLink 명령을 익히는 데스크톱 프로그램을 개발했습니다.
+
+- 시뮬레이터 실행·연결, 기체 상태 HUD, 지도 기반 이동, ARM·이륙·복귀 명령과 단계별 안내를 통합했습니다.
+- 자연어 요청에 따른 고도 후보 비교, 교육용 배터리 소모 추정, 실습 이력의 CSV 저장 기능을 구현했습니다. 로컬 LLM을 사용할 수 없을 때는 규칙 기반 분석으로 동작합니다.
+- **프로그램 저작권 등록 제C-2026-031893호**. 교육용 시뮬레이션 프로젝트이며, 실제 기체 운용 검증과는 구분합니다.
+
+[저장소 및 실행 안내](https://github.com/a77315829-byte/flyhigh-drone-gcs) · [프로그램 코드](https://github.com/a77315829-byte/flyhigh-drone-gcs/blob/main/flyhigh_gcs.py)
+
+### 07. SoccerMirrorGame — AI와 사람이 함께하는 멀티플레이 축구
+
+**2026.01 · 라오스 SW·AI 교육 파견 및 프로젝트 멘토링**  
+Unity · C# · ML-Agents · Mirror
+
+라오스국립대학교 학생 대상 SW·AI 교육에서 AI 생성 텍스트 판별 실습과 축구 게임 프로젝트 멘토링을 진행했습니다.
+
+- 학습된 AI 에이전트와 사람이 같은 경기에서 움직이도록 ML-Agents와 Mirror 네트워크 환경을 연결한 프로젝트입니다.
+- 물리 연산과 득점 판정을 호스트에서 처리해 AI와 사람이 같은 경기 규칙을 공유하도록 구성했습니다.
+- **멘토링한 현지 팀이 최종 발표 1위**를 기록했습니다.
+
+[프로젝트 코드](https://github.com/a77315829-byte/SoccerMirrorGame)
+
+### 08. 댕댕가이드 — 반려견 정보 모바일 앱
+
+**교내 모바일앱 프로그래밍 프로젝트 참여**  
+Flutter · Dart · REST API
+
+견종 정보와 반려견 관련 콘텐츠를 확인하는 모바일 앱 프로젝트에 참여했습니다. 앱에는 **견종 목록·상세 정보, 조건별 필터, 반려견 성향 테스트, 커뮤니티 게시판**이 구현돼 있습니다. Flutter 화면과 서버 API를 연결한 모바일 서비스 개발 경험입니다.
+
+[팀 저장소](https://github.com/DanmmGuide/dang) · [앱 화면 코드](https://github.com/DanmmGuide/dang/tree/HEAD/lib/pages)
+
+### 09. AI 생성 텍스트 판별 — DACON
+
+**2025.06 ~ 2025.08 · 4인 팀 프로젝트**  
+Python · PyTorch · KULLM · BARTScore · KoELECTRA
+
+한국어 텍스트를 사람이 작성했는지 LLM이 생성했는지 분류하는 대회에 참여했습니다. 팀에서는 **LLM 교정 → 원문·교정문 비교 → KoELECTRA 분류** 흐름을 구현하고, GPU별로 데이터를 나눠 추론하는 파이프라인을 구성했습니다. 대회 기록 점수는 **0.78098, 상위 50%**입니다.
+
+[저장소 및 대회 기록](https://github.com/a77315829-byte/AI-Generated-Text-Detection)
+
+### 프로토타입과 교과 실습
+
+| 프로젝트 | 구현·학습 내용 | 코드 |
 |---|---|---|
-| AI 생성 텍스트 판별 | 4인 팀 참여. KULLM 교정, BARTScore 비교, KoELECTRA 분류를 활용한 NLP 프로젝트 | [코드·대회 기록](https://github.com/a77315829-byte/AI-Generated-Text-Detection) |
-| MOLE | 논문 검색 화면·공통 Unity UI 담당. PubMed 검색 결과와 한국어 번역을 화면에 연결. 2025 신한대학교 창업경진대회 금상 | [담당 기능과 코드 안내](https://github.com/a77315829-byte/MOLE) |
-| FLYHIGH Drone GCS | Python·MAVLink·ArduPilot SITL 기반 교육 프로그램 단독 개발. 프로그램 저작권 등록 제C-2026-031893호 | [코드·실습 화면](https://github.com/a77315829-byte/flyhigh-drone-gcs) |
-| 라오스 SW·AI 멘토링 | 현지 대학생 대상 AI 텍스트 판별 교육 및 Unity·ML-Agents 기반 프로젝트 멘토링. 담당 팀 최종 발표 1위 | [교육에 활용한 저장소](https://github.com/a77315829-byte/SoccerMirrorGame) |
+| 주식 교육 서비스 초기 프로토타입 | 기존 STOTRA를 바탕으로 교육 화면과 Python 시뮬레이터 연동을 탐색한 ANTITUDE의 초기 버전. React·TypeScript·Node.js·FastAPI 활용 | [Capstone-demo](https://github.com/a77315829-byte/Capstone-demo) |
+| 명화 선호도 투표 앱 | Kotlin Android 실습. 이미지별 투표 집계, Intent로 화면 간 데이터 전달, RatingBar와 최다 득표 이미지 표시 | [mobile-app-programming10-2-](https://github.com/a77315829-byte/mobile-app-programming10-2-) |
+| Android UI 이벤트 실습 | Kotlin의 Switch·RadioGroup 선택에 따른 화면 표시와 이미지 변경, 초기화·종료 이벤트 구현 | [homework1](https://github.com/a77315829-byte/homework1) |
+
+---
 
 ## 다음 학습 방향
 
