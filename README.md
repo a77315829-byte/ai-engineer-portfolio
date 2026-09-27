@@ -139,10 +139,10 @@ MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
 
 - FastAPI·SQLite·SQLAlchemy와 React·TypeScript 기반으로 구성했습니다.
 - 메일별 챗봇은 최근 대화, 긴 대화의 요약, DB에 저장한 업무 기억을 활용합니다.
-- 업무 기억은 고객·품목 등 조건을 활용해 조회합니다. 벡터 검색 기반 RAG를 직접 구현한 경험으로 표현하지 않습니다.
+- 업무 기억은 고객·품목 등의 조건을 활용하는 관계형 DB 조회 방식으로 구성돼 있습니다.
 - 누락 정보와 가격 근거 충돌은 검토 대상으로 분리하고, 담당자 승인 전 발송을 차단하는 절차를 포함합니다.
 
-위 구조는 **팀 시스템 전체**의 설명이며, 본인 기여는 앞서 명시한 설계·UI·챗봇 보완 범위입니다. 업무 시간 절감률은 검증된 수치가 있는 경우에만 제시합니다.
+위 구조는 **팀 시스템 전체**의 설명이며, 본인 기여는 앞서 명시한 설계·UI·챗봇 보완 범위입니다.
 
 **구현 근거:** [대화·요약·도구 연결](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/backend/app/services/agent_service.py) · [업무 기억 저장·조회](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/backend/app/services/memory_service.py) · [팀 시스템 설명](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/README.md)
 
@@ -185,7 +185,7 @@ MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
 
 | 프로젝트·활동 | 내용과 역할 | 근거 |
 |---|---|---|
-| AI 생성 텍스트 판별 | 4인 팀 참여. KULLM 교정, BARTScore 비교, KoELECTRA 분류를 활용한 NLP 프로젝트. 세부 역할이 명시된 핵심 프로젝트와 구분해 소개 | [코드·대회 기록](https://github.com/a77315829-byte/AI-Generated-Text-Detection) |
+| AI 생성 텍스트 판별 | 4인 팀 참여. KULLM 교정, BARTScore 비교, KoELECTRA 분류를 활용한 NLP 프로젝트 | [코드·대회 기록](https://github.com/a77315829-byte/AI-Generated-Text-Detection) |
 | MOLE | 논문 검색 화면·공통 Unity UI 담당. PubMed 검색 결과와 한국어 번역을 화면에 연결. 2025 신한대학교 창업경진대회 금상 | [담당 기능과 코드 안내](https://github.com/a77315829-byte/MOLE) |
 | FLYHIGH Drone GCS | Python·MAVLink·ArduPilot SITL 기반 교육 프로그램 단독 개발. 프로그램 저작권 등록 제C-2026-031893호 | [코드·실습 화면](https://github.com/a77315829-byte/flyhigh-drone-gcs) |
 | 라오스 SW·AI 멘토링 | 현지 대학생 대상 AI 텍스트 판별 교육 및 Unity·ML-Agents 기반 프로젝트 멘토링. 담당 팀 최종 발표 1위 | [교육에 활용한 저장소](https://github.com/a77315829-byte/SoccerMirrorGame) |
