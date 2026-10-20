@@ -15,7 +15,7 @@ Python · 모델 학습/평가 · LLM Agent/RAG · Unity C#
 - RAISE: Rational-Aware Investment Scoring and Evaluation - 제2저자, PlatCon-26 발표 / Best Paper Award (2026.08).
 - VIMAS: Visual Mission Authoring System for Ground Control Station - 제2저자, PlatCon-26 발표 (2026.08).
 - AI 기반 3차원 시뮬레이션 화학 학습 시스템의 설계 및 구현 - 제2저자, 융복합지식학회 추계 발표 (2025.11).
-- SW Start-Up Festa SW 해커톤 경진대회 총장상 (2026.09), 신한대학교 창업경진대회 금상 (2025.12).
+- SW Start-Up Festa SW 해커톤 경진대회 총장상 (2026.09), 창업경진대회 금상 (2025.12).
 - FLYHIGH Drone GCS 프로그램 저작권 등록 제C-2026-031893호.
 ## 프로젝트
 
