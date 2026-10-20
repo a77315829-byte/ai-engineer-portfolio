@@ -9,8 +9,14 @@ Python · 모델 학습/평가 · LLM Agent/RAG · Unity C#
 
 ![AI 엔지니어링 작업 흐름](docs/portfolio/engineering.png)
 
-[구성도 SVG 원본](docs/portfolio/engineering.svg)
 
+## 연구·수상
+
+- RAISE: Rational-Aware Investment Scoring and Evaluation - 제2저자, PlatCon-26 발표 / Best Paper Award (2026.08).
+- VIMAS: Visual Mission Authoring System for Ground Control Station - 제2저자, PlatCon-26 발표 (2026.08).
+- AI 기반 3차원 시뮬레이션 화학 학습 시스템의 설계 및 구현 - 제2저자, 융복합지식학회 추계 발표 (2025.11).
+- SW Start-Up Festa SW 해커톤 경진대회 총장상 (2026.09), 신한대학교 창업경진대회 금상 (2025.12).
+- FLYHIGH Drone GCS 프로그램 저작권 등록 제C-2026-031893호.
 ## 프로젝트
 
 모든 프로젝트를 같은 기준으로 정리했습니다. 각 저장소에서 처리 흐름, 본인 기여, 기술적 판단과 결과를 확인할 수 있습니다.
@@ -141,13 +147,6 @@ LLM 교정문을 활용한 한국어 AI 생성 텍스트 판별
 
 [코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/AI-Generated-Text-Detection)
 
-## 연구·수상
-
-- RAISE: Rational-Aware Investment Scoring and Evaluation - 제2저자, PlatCon-26 발표 / Best Paper Award (2026.08).
-- VIMAS: Visual Mission Authoring System for Ground Control Station - 제2저자, PlatCon-26 발표 (2026.08).
-- AI 기반 3차원 시뮬레이션 화학 학습 시스템의 설계 및 구현 - 제2저자, 융복합지식학회 추계 발표 (2025.11).
-- SW Start-Up Festa SW 해커톤 경진대회 총장상 (2026.09), 신한대학교 창업경진대회 금상 (2025.12).
-- FLYHIGH Drone GCS 프로그램 저작권 등록 제C-2026-031893호.
 
 ## 협업·교육
 
