@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Malgun Gothic, Noto Sans CJK KR, sans-serif">
+<text x="35" y="38" font-size="30" fill="#4964ce" font-weight="700" text-anchor="start">AI ENGINEERING / EVIDENCE MAP</text>
+<text x="35" y="71" font-size="22" fill="#64718a" font-weight="400" text-anchor="start">윤정우 / 모델·Agent·클라이언트 역량을 각 프로젝트의 코드와 결과에 연결</text>
+<rect x="45" y="125" width="450" height="425" rx="17" fill="#f3f6fc" stroke="#d3dced" stroke-width="2"/>
+<text x="65" y="160" font-size="23" fill="#64718a" font-weight="700" text-anchor="start">MODEL</text>
+<rect x="575" y="125" width="450" height="425" rx="17" fill="#f3f6fc" stroke="#d3dced" stroke-width="2"/>
+<text x="595" y="160" font-size="23" fill="#64718a" font-weight="700" text-anchor="start">AGENT</text>
+<rect x="1105" y="125" width="450" height="425" rx="17" fill="#f3f6fc" stroke="#d3dced" stroke-width="2"/>
+<text x="1125" y="160" font-size="23" fill="#64718a" font-weight="700" text-anchor="start">CLIENT</text>
+<text x="73" y="214" font-size="29" fill="#4964ce" font-weight="700" text-anchor="start">학습 / 검증</text>
+<rect x="72" y="255" width="396" height="68" rx="14" fill="#ffffff" stroke="#d3dced" stroke-width="2"/>
+<text x="270.0" y="300.0" font-size="28" fill="#172842" font-weight="700" text-anchor="middle">행동 예측 · LoRA / 증류</text>
+<rect x="72" y="345" width="396" height="68" rx="14" fill="#ffffff" stroke="#d3dced" stroke-width="2"/>
+<text x="270.0" y="390.0" font-size="28" fill="#172842" font-weight="700" text-anchor="middle">텍스트 판별 · KoELECTRA</text>
+<text x="603" y="214" font-size="29" fill="#4964ce" font-weight="700" text-anchor="start">검색 / 도구 / 선호</text>
+<rect x="602" y="255" width="396" height="68" rx="14" fill="#ffffff" stroke="#d3dced" stroke-width="2"/>
+<text x="800.0" y="300.0" font-size="28" fill="#172842" font-weight="700" text-anchor="middle">ANTITUDE · 공시 RAG</text>
+<rect x="602" y="345" width="396" height="68" rx="14" fill="#ffffff" stroke="#d3dced" stroke-width="2"/>
+<text x="800.0" y="390.0" font-size="28" fill="#172842" font-weight="700" text-anchor="middle">OPENMOON · 업무 Tool</text>
+<rect x="602" y="435" width="396" height="68" rx="14" fill="#ffffff" stroke="#d3dced" stroke-width="2"/>
+<text x="800.0" y="480.0" font-size="28" fill="#172842" font-weight="700" text-anchor="middle">프롬프트 도구 · 선택 반복</text>
+<text x="1133" y="214" font-size="29" fill="#4964ce" font-weight="700" text-anchor="start">서비스 / 시뮬레이션</text>
+<rect x="1132" y="255" width="396" height="68" rx="14" fill="#eef8f5" stroke="#afd7cf" stroke-width="2"/>
+<text x="1330.0" y="300.0" font-size="28" fill="#137d78" font-weight="700" text-anchor="middle">Soccer · 네트워크 / AI</text>
+<rect x="1132" y="345" width="396" height="68" rx="14" fill="#eef8f5" stroke="#afd7cf" stroke-width="2"/>
+<text x="1330.0" y="390.0" font-size="28" fill="#137d78" font-weight="700" text-anchor="middle">MOLE · Unity C#</text>
+<rect x="1132" y="435" width="396" height="68" rx="14" fill="#eef8f5" stroke="#afd7cf" stroke-width="2"/>
+<text x="1330.0" y="480.0" font-size="28" fill="#137d78" font-weight="700" text-anchor="middle">FLYHIGH · MAVLink</text>
+</g>
+</svg>

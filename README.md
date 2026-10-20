@@ -9,6 +9,8 @@ Python · 모델 학습/평가 · LLM Agent/RAG · Unity C#
 
 ![AI 엔지니어링 작업 흐름](docs/portfolio/engineering.png)
 
+[구성도 SVG 원본](docs/portfolio/engineering.svg)
+
 ## 프로젝트
 
 모든 프로젝트를 같은 기준으로 정리했습니다. 각 저장소에서 처리 흐름, 본인 기여, 기술적 판단과 결과를 확인할 수 있습니다.
