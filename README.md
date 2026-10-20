@@ -2,7 +2,7 @@
 
 **데이터와 문맥을 모델·Agent에 연결하고, 결과를 사용 가능한 기능으로 구현합니다.**
 
-신한대학교 소프트웨어융합학과 · 2027.02 졸업예정  
+소프트웨어융합학과 · 2027.02 졸업예정  
 Python · 모델 학습/평가 · LLM Agent/RAG · Unity C#
 
 [GitHub](https://github.com/a77315829-byte) · [Email](mailto:wjddn010108@naver.com)
