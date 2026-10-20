@@ -1,256 +1,168 @@
-# 윤정우 | AI Engineer Portfolio
+# 윤정우 | AI Engineering Portfolio
 
-**업무 맥락을 이해하고, 모델의 결과를 검증하며, 사용자가 쓰는 서비스로 연결합니다.**
+**데이터와 문맥을 모델·Agent에 연결하고, 결과를 사용 가능한 기능으로 구현합니다.**
 
-소프트웨어융합학과 · 졸업예정  
-Language AI · 모델 학습 및 평가 · 업무용 AI 서비스 개발
+신한대학교 소프트웨어융합학과 · 2027.02 졸업예정  
+Python · 모델 학습/평가 · LLM Agent/RAG · Unity C#
 
-AI 에이전트 행동 예측 모델, 선택 기반 프롬프트 생성 도구, 기업의 견적 업무 보조 시스템, 투자 판단 학습 플랫폼을 개발했습니다. 모델을 만드는 과정과 그 결과를 신뢰할 수 있는지 확인하는 과정을 함께 다뤄왔습니다.
+[GitHub](https://github.com/a77315829-byte) · [Email](mailto:wjddn010108@naver.com)
 
-[GitHub](https://github.com/a77315829-byte) · [프롬프트 도구 데모](https://preference-prompt-tool-7c9fvm3tb5bfxv8v6648fu.streamlit.app/)
+![AI 엔지니어링 작업 흐름](docs/portfolio/engineering.png)
 
-## 핵심 프로젝트
+## 프로젝트
 
-| 프로젝트 | 본인 역할 | 확인할 수 있는 역량 | 결과 |
-|---|---|---|---|
-| [선호 기반 프롬프트 생성](#01-preference-prompt-tool) | 3인 팀장 · 프롬프트 생성 및 평가 방식 개선 | 선호 추정, LLM 활용, 평가 지표 설계 | MVP 구현 · 비교 실험 및 한계 분석 |
-| [AI 에이전트 행동 예측](#02-ai-agent-action-prediction) | 5인 팀장 · 모델 개발과 검증 | LoRA, 지식 증류, LightGBM, 그룹 검증 | DACON 48위 · 상위 18% |
-| [AI 견적 업무 보조](#03-openmoon) | 기업협력 인턴 · 초기 설계, 웹 UI, 챗봇 보완 | 업무 데이터 연계, 대화 맥락, 도구 호출 | 팀 시스템 구현 · 사내 설치·사용 안내 지원 |
-| [ANTITUDE · RAISE](#04-antitude--raise) | 5인 팀장 · 기획, 웹 개발, AI 기능 통합 | 서비스 통합, 평가 결과의 피드백 연결 | PlatCon-26 Best Paper Award · 제2저자 |
+모든 프로젝트를 같은 기준으로 정리했습니다. 각 저장소에서 처리 흐름, 본인 기여, 기술적 판단과 결과를 확인할 수 있습니다.
 
-**그 밖의 개발 경험:** [Unity 교육 앱 · 드론 관제 · 멀티플레이 게임 · Flutter 앱 · NLP 대회 · Android 실습](#추가-프로젝트와-개발-경험)
-
-## 역량과 구현 근거
-
-| 역량 | 사용 기술·방법 | 대표 근거 |
+| 프로젝트 | AI·소프트웨어 기술 | 본인 역할 |
 |---|---|---|
-| 언어모델 기반 분류 | Python, PyTorch, Transformers, LoRA/PEFT | Qwen2.5-Coder-0.5B 행동 분류기 |
-| 모델 평가·실험 | scikit-learn, StratifiedGroupKFold, Macro-F1, ROUGE-L | 세션 분리, 유효하지 않은 실험 제외, 별도 평가 지표 비교 |
-| LLM 활용 | 선호 추정, 프롬프트 조립, GEPA, Function Calling / Tool Use | 프롬프트 생성 도구, 견적 업무 보조 챗봇 |
-| 서비스 구현 | FastAPI, React, TypeScript, Node.js, SQLite, MongoDB | 업무 화면, API 연동, AI 기능 통합 |
+| [ANTITUDE](https://github.com/a77315829-byte/Capstone-ver0.1) | Python · FastAPI · React · TypeScript · MongoDB · Ollama · FAISS · KIS API | AI 활용 흐름 기획 · 웹/API 개발 · 기능 통합 |
+| [OPENMOON / yullinmoon](https://github.com/a77315829-byte/yullin-moon-design) | Python · FastAPI · Pydantic · SQLAlchemy · SQLite · React · TypeScript · OpenAI / Anthropic | 초기 MVP 단독 구현 · 상담 Agent 확장 |
+| [AI Agent Action Prediction](https://github.com/a77315829-byte/AI-Agent-Action-Prediction) | Python · PyTorch · Transformers · PEFT / LoRA · scikit-learn · LightGBM | 모델 개발 · 입력 표현 · 검증과 최종 구성 선택 |
+| [Preference Prompt Tool](https://github.com/a77315829-byte/preference-prompt-tool) | Python · React · TypeScript/JavaScript · Bradley-Terry · GEPA · LiteLLM · SQLite | 선호 반영 구조 기획·개발 · 평가 방식 개선 |
+| [SoccerMirrorGame](https://github.com/a77315829-byte/SoccerMirrorGame) | Unity · C# · ML-Agents · Mirror · Rigidbody · Command · SyncVar | Unity Soccer 예제 기반 확장 |
+| [MOLE / EduMoleculAR](https://github.com/a77315829-byte/MOLE) | Unity · C# · Coroutine · UnityWebRequest · JsonUtility · FastAPI · PubMed | 논문 검색 · 공통 UI 개발 |
+| [FLYHIGH Drone GCS](https://github.com/a77315829-byte/flyhigh-drone-gcs) | Python · Tkinter · pymavlink · ArduPilot SITL · Ollama · CSV | 프로그램 저작권 등록 |
+| [AI-Generated Text Detection](https://github.com/a77315829-byte/AI-Generated-Text-Detection) | Python · PyTorch · Transformers · KULLM · BARTScore · KoELECTRA · Multi-GPU | 텍스트 판별 파이프라인 참여 |
 
----
+[포트폴리오 PDF 다운로드](docs/portfolio/jeongwoo-yoon-ai-portfolio.pdf)
 
-## 01. Preference Prompt Tool
 
-**사용자의 선택에서 응답 선호를 추정해 재사용 가능한 프롬프트를 만드는 도구**  
-2026.09 ~ 진행 중 · 3인 팀 / 팀장
+## 01. ANTITUDE
 
-[저장소](https://github.com/a77315829-byte/preference-prompt-tool) · [데모](https://preference-prompt-tool-7c9fvm3tb5bfxv8v6648fu.streamlit.app/)
+공시 검색과 투자자 Agent를 연결한 투자 판단 학습 플랫폼
 
-### 문제와 본인 기여
+2026.03 - 진행 중 | 5인 팀장 | AI 활용 흐름 기획 · 웹/API 개발 · 기능 통합
 
-사용자는 원하는 답변을 말로 설명하기 어려워도 두 결과물 중 더 나은 쪽을 고를 수 있습니다. 이 선택을 프롬프트로 변환하는 도구를 개발하며, 선호를 반영하는 방식과 그 효과를 평가하는 방법을 다뤘습니다. 특히 정답과 표현이 겹친다는 이유만으로 높은 점수를 주는 평가의 한계를 확인하고, 요약 길이와 원문 표현의 사용 정도를 직접 측정하는 방식으로 보완했습니다.
+투자자 Agent, 공시 기반 RAG, 판단 학습 피드백의 목적과 전체 흐름을 기획했습니다. 웹 화면과 API를 개발하고 팀이 구현한 AI 모듈을 서비스에 통합했습니다.
 
-### 구현 흐름
+![ANTITUDE 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/Capstone-ver0.1/main/docs/portfolio/architecture.png)
 
-```mermaid
-flowchart LR
-    A["결과물 A/B 선택"] --> B["축별 선호·확신도 추정"]
-    B --> C["시스템 프롬프트 조립"]
-    C --> D["새 입력에 적용"]
-    B --> E["평가 함수 + 자연어 피드백"]
-    E --> F["GEPA 최적화 · 선택 단계"]
-    F --> D
-```
+뉴스·시세·공시와 Agent 분석을 하나의 학습 흐름으로 통합했습니다. 관련 RAISE 연구에 제2저자로 참여했고, 전역자금 플래너 확장 버전으로 해커톤 총장상을 받았습니다.
 
-- 8~10회 쌍대 비교를 통해 Bradley–Terry 방식의 온라인 업데이트로 축별 선호를 추정합니다.
-- 선호와 확신도를 평가 함수로 변환하고, 축별 위반 내용을 자연어 피드백으로 제공합니다.
-- 요약·이메일·리뷰·코딩 등 도메인 정의와 공통 엔진을 분리했습니다.
-- LLM API를 활용하는 프로젝트이며, 기반 언어모델을 직접 학습하거나 파인튜닝하는 프로젝트는 아닙니다.
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/Capstone-ver0.1)
 
-### 검증 결과와 해석
+## 02. OPENMOON / yullinmoon
 
-MACSum 기반 **문서 5개**에서 기록한 비교 결과입니다.
+LLM 구조화 추출과 검토 절차를 결합한 견적 업무 보조 시스템
 
-| 조건 | 자체 검사 점수 | 별도 비교 지표 ROUGE-L |
-|---|---:|---:|
-| 지침 없이 기본 호출 | 0.600 | 0.101 |
-| 고정 일반 지침 | 0.668 | 0.168 |
-| 8회 선택 후 프롬프트 조립 | 0.996 | 0.207 |
+2026.08.03 - 2026.09.07 | 기업협력 인턴 · 3인 팀 | 초기 MVP 단독 구현 · 상담 Agent 확장
 
-자체 검사 점수는 프롬프트 구성 목표와 같은 계열의 함수를 사용하므로 그 수치만으로 효과를 판단하지 않았습니다. 최적화에 사용하지 않은 ROUGE-L로도 비교했습니다. 표본이 작고 ROUGE-L도 참고 요약과의 표현 겹침을 측정하므로, 이 결과를 사용자 만족도나 일반적인 품질 우위로 해석하지 않습니다.
+초기 MVP를 단독 구현했습니다. 이후 팀 시스템에 전체 업무 상담 Agent를 추가하고 대화 맥락과 견적 변경 흐름을 보완했습니다. 사내 PC 기반 LAN 접속, NAS 연결과 사용 안내도 맡았습니다.
 
-**위 표의 프롬프트 조립 조건에는 GEPA가 적용되지 않았습니다.** 별도 GEPA 실험의 상세 피드백 0.98 / 점수만 제공 0.44는 최적화에 사용한 평가 함수의 소규모 단일 실험 결과입니다. 두 실험의 효과를 구분해 기록했습니다. 사람 라벨과 검사 함수의 불일치, specificity 축의 측정 실패도 분석했습니다.
+![OPENMOON / yullinmoon 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/yullin-moon-design/main/docs/portfolio/architecture.png)
 
-**코드·실험 근거:** [선호 추정](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/engine/estimator.py) · [평가 함수](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/engine/metric_builder.py) · [속성 검사](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/checks/summarization.py) · [비교 실험](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/experiments/compare_baselines.py) · [결과 CSV](https://github.com/a77315829-byte/preference-prompt-tool/blob/master/experiments/results/baseline_comparison.csv)
+대화 테스트에서 앞서 말한 조건을 후속 답변에 반영하는 것을 확인했습니다. 추가 서버 비용 없이 사내 직원들이 공동 접속할 환경을 구성했습니다.
 
-<details>
-<summary>화면 보기 — React 결과물 비교 (2026.09.27)</summary>
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/yullin-moon-design)
 
-![선호 기반 프롬프트 생성기 — React 결과물 비교 화면](https://raw.githubusercontent.com/a77315829-byte/preference-prompt-tool/master/docs/screenshots/react-compare.png)
+## 03. AI Agent Action Prediction
 
-</details>
+대화·도구 이력으로 다음 행동 14종을 예측하는 언어모델 분류기
 
----
+2026.07 | 5인 팀장 | 모델 개발 · 입력 표현 · 검증과 최종 구성 선택
 
-## 02. AI Agent Action Prediction
+대화·행동 문맥을 모델 입력으로 구성하고, 언어모델 분류기와 구조화 특징을 결합했습니다. 비교 실험과 검증 오류 점검, 최종 제출 구성 선택을 맡았습니다.
 
-**대화와 도구 사용 이력으로 AI 에이전트의 다음 행동 14종을 예측**  
-2026.07 · 5인 팀 / 팀장 · 모델 개발 및 검증
+![AI Agent Action Prediction 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/AI-Agent-Action-Prediction/main/docs/portfolio/architecture.png)
 
-[저장소](https://github.com/a77315829-byte/AI-Agent-Action-Prediction) · [결과 보고서](https://github.com/a77315829-byte/AI-Agent-Action-Prediction/blob/main/docs/RESULT_REPORT.md)
+최종 Public Macro-F1 0.7894를 기록했습니다. 로컬 최고점, 독립 holdout, Public 결과와 추론 시 이용 가능한 정보를 구분해 모델을 선택했습니다.
 
-### 문제와 접근
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/AI-Agent-Action-Prediction)
 
-70,000개 학습 샘플에는 같은 작업 세션의 여러 단계가 포함돼 있습니다. 행 단위 무작위 분할로는 유사한 맥락이 학습과 검증에 동시에 들어갈 수 있어, 세션 ID를 기준으로 분리했습니다.
+## 04. Preference Prompt Tool
 
-- Qwen2.5-Coder-0.5B-Instruct를 LoRA로 학습하고 현재 문맥·행동·이력 구간을 나눠 pooling했습니다.
-- 구조화 특징과 행동·상위 분류 head를 결합했습니다.
-- OOF teacher 확률을 이용한 지식 증류와 LightGBM 확률 블렌딩을 비교했습니다.
-- 세션 단위 `StratifiedGroupKFold`와 검증 집합 간 그룹 중복 검사를 적용했습니다.
+사용자의 선택을 선호 추정과 재사용 가능한 프롬프트로 변환
 
-### 결과와 기술적 판단
+2026.09 - 진행 중 | 3인 팀장 | 선호 반영 구조 기획·개발 · 평가 방식 개선
 
-**대회 48위 / 상위 18% · 최종 Public Macro-F1 0.7893958473**
+선택 기반 프롬프트 생성 도구를 기획하고, 선호를 반영하는 구조와 평가 방식 개선을 맡았습니다. 기능 구현과 품질 개선 실험을 구분해 기록했습니다.
 
-| 시도 | 관찰 | 판단 |
-|---|---|---|
-| Qwen + LightGBM | Tree 비중 0.15에서 공개 평가 최고점 | 최종 구성으로 선택 |
-| 세션 경로 Viterbi 후처리 | OOF 개선이 실제 추론 입력 구조에서 재현되지 않음 | 사용 가능한 정보가 달라 제외 |
-| 1.5B 모델 확대 | 검증 성능 및 제출 용량 측면에서 불리 | 0.5B 구성 유지 |
+![Preference Prompt Tool 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/preference-prompt-tool/master/docs/portfolio/architecture.png)
 
-개선되지 않은 실험도 기록했습니다. 특히 초기 체크포인트가 검증 행을 이미 본 일부 student fold 결과를 발견해 유효한 비교에서 제외했습니다. **그룹 분리 원칙을 적용한 것과 최종 student의 독립 5-fold 검증을 완수한 것은 다르며**, 후자는 완료하지 못한 한계로 명시했습니다.
+프롬프트 생성·재사용 흐름과 React UI를 구현했습니다. Qwen의 30개 페르소나 비교에서 강한 비교군 대비 ROUGE-L 평균차 +0.0047, p=0.3616으로 유의한 우위는 확인하지 못했습니다.
 
-**코드·실험 근거:** [Qwen 학습·세션 분리](https://github.com/a77315829-byte/AI-Agent-Action-Prediction/blob/main/src/core/train_qwen_segment_v4.py) · [지식 증류](https://github.com/a77315829-byte/AI-Agent-Action-Prediction/blob/main/src/core/train_qwen_distill_v12.py) · [실험 로그](https://github.com/a77315829-byte/AI-Agent-Action-Prediction/blob/main/docs/EXPERIMENT_LOG.md) · [제외한 실험과 이유](https://github.com/a77315829-byte/AI-Agent-Action-Prediction/blob/main/docs/INVALID_EXPERIMENTS.md)
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/preference-prompt-tool)
 
----
+## 05. SoccerMirrorGame
 
-## 03. OPENMOON
+학습된 AI와 사람이 함께 플레이하는 Unity 네트워크 축구
 
-**주문 메일·첨부 문서·견적 이력을 연결하는 AI 견적 업무 보조 시스템**  
-2026.08.03 ~ 2026.09.07 · ㈜열린문디자인 기업협력 인턴 · 3인 팀
+2026.01 라오스 교육 준비·멘토링 | Unity Soccer 예제 기반 확장
 
-[초기 설계 저장소](https://github.com/a77315829-byte/yullin-moon-design) · [최종 팀 저장소](https://github.com/kimhonggyeong/OPENMOON_FRONT) · [본인 계정의 팀 버전 fork](https://github.com/a77315829-byte/yullinmoondesign_)
+교육용 축구 게임을 준비하고 프로젝트 구조와 확장 방법을 멘토링했습니다. AI와 사람의 제어 경로, 서버 물리와 경기 상태 동기화를 다뤘습니다. Unity의 기존 Soccer 예제를 기반으로 확장한 프로젝트입니다.
 
-### 문제와 본인 기여
+![SoccerMirrorGame 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/SoccerMirrorGame/main/docs/portfolio/architecture.png)
 
-담당자가 주문 메일과 첨부파일을 읽고 과거 견적·단가표를 확인하는 업무를 보조하는 시스템입니다. **초기 구조 설계, 웹 UI 구현, 챗봇 코드 수정과 대화 맥락 기능 보완**을 맡았습니다. 사내 설치 및 사용 안내도 지원했습니다.
+멘토링한 현지 팀이 최종 발표 1위를 기록했습니다. 학생들은 질문하고 직접 게임 기능을 바꿔보는 방식으로 참여했습니다.
 
-담당자가 “저번처럼 해줘”라고 요청했을 때 이전 대화와 업무 정보를 활용할 수 있도록, 현재 질문과 앞선 맥락이 이어지는 흐름을 보완했습니다.
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/SoccerMirrorGame)
 
-### 팀 시스템의 구조
+## 06. MOLE / EduMoleculAR
 
-```text
-주문 메일·첨부파일 → 정보 추출 → 과거 견적·단가표 조회 → 견적 초안
-                                              ↓
-                                  누락·충돌 검토 → 담당자 승인
+AI 화학 학습 서비스를 사용하는 Unity·C# 클라이언트
 
-챗봇 요청 → 최근 대화·누적 요약·업무 기억 → 필요한 도구 호출 → 응답
-```
+2025.03 - 2025.12 | 8인 팀 | 논문 검색 · 공통 UI 개발
 
-- FastAPI·SQLite·SQLAlchemy와 React·TypeScript 기반으로 구성했습니다.
-- 메일별 챗봇은 최근 대화, 긴 대화의 요약, DB에 저장한 업무 기억을 활용합니다.
-- 업무 기억은 고객·품목 등의 조건을 활용하는 관계형 DB 조회 방식으로 구성돼 있습니다.
-- 누락 정보와 가격 근거 충돌은 검토 대상으로 분리하고, 담당자 승인 전 발송을 차단하는 절차를 포함합니다.
+논문 검색 화면과 Unity 공통 UI를 개발했습니다. 서버의 AI 챗봇·퀴즈 추천 모델은 팀 시스템 구성으로 구분하고, 본인 기여는 C# 클라이언트와 외부 서비스 연동에 둡니다.
 
-위 구조는 **팀 시스템 전체**의 설명이며, 본인 기여는 앞서 명시한 설계·UI·챗봇 보완 범위입니다.
+![MOLE / EduMoleculAR 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/MOLE/main/docs/portfolio/architecture.png)
 
-**구현 근거:** [대화·요약·도구 연결](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/backend/app/services/agent_service.py) · [업무 기억 저장·조회](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/backend/app/services/memory_service.py) · [팀 시스템 설명](https://github.com/a77315829-byte/yullinmoondesign_/blob/main/README.md)
+검색 입력 → API 요청 → 응답 파싱 → 카드 생성 → 상세 확인을 연결했습니다. 팀 프로젝트는 창업경진대회 금상과 융복합지식학회 발표로 이어졌습니다.
 
----
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/MOLE)
 
-## 04. ANTITUDE / RAISE
+## 07. FLYHIGH Drone GCS
 
-**수익률뿐 아니라 투자 판단의 근거를 돌아보는 학습 플랫폼**  
-2026.03 ~ 진행 중 · 5인 팀 / 팀장
+자연어 의도와 규칙 계산을 결합한 드론 관제 교육 도구
 
-[캡스톤 저장소](https://github.com/a77315829-byte/Capstone-ver0.1) · [해커톤 확장 버전](https://github.com/a77315829-byte/antitude-defense)
+2026 | 개인 프로젝트 · 단독 개발 | 프로그램 저작권 등록
 
-### 문제와 본인 기여
+프로그램 기획·화면·MAVLink 통신·실습 안내·AI 보조 기능을 단독 개발했습니다. 실제 기체 대신 SITL을 사용하는 교육 프로그램입니다.
 
-사용자가 뉴스를 해석하고 매매 판단의 근거를 작성한 뒤, 판단 과정에 대한 피드백을 받을 수 있는 학습 환경을 만들었습니다. **팀장으로 기획·웹 개발·AI 기능 통합**을 맡아 KIS Open API 시세와 학습 기능을 연결했습니다. 팀원들이 개발한 평가 기능을 사용자 답변 입력부터 화면 피드백까지 이어지도록 통합했습니다.
+![FLYHIGH Drone GCS 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/flyhigh-drone-gcs/main/docs/portfolio/architecture.png)
 
-### 개선 과정
+관제 조작·상태 관찰·명령 해설·실습 이력을 묶은 데스크톱 도구를 구현했습니다. 프로그램 저작권 제C-2026-031893호를 등록했습니다.
 
-인공지능 루키 대회 예선 탈락 후 제안서를 다시 검토하고, 평가 기준과 검증 근거를 보완했습니다. 팀과 함께 핵심 정보 파악·해석·위험 인식·행동과 근거의 일관성·논리 연결을 구체화하고, 규칙 기반 점수와 사람의 평가를 비교했습니다. 제 역할은 보완한 구조를 서비스 기획과 웹 기능에 반영하는 것이었습니다.
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/flyhigh-drone-gcs)
 
-현재 공개 코드는 규칙 기반 채점과 AI 해설을 구분하며, React·TypeScript / Node.js / FastAPI / MongoDB로 구성돼 있습니다. 현재 서비스 구현과 수상 논문의 연구 시점·범위는 구분합니다.
+## 08. AI-Generated Text Detection
 
-### 성과
+LLM 교정문을 활용한 한국어 AI 생성 텍스트 판별
 
-- **PlatCon-26 Best Paper Award**, 2026.08.25 — 「RAISE: Rational-Aware Investment Scoring and Evaluation」 **제2저자**
-- **2026 SW Start-Up Festa SW 해커톤 경진대회 총장상**, 2026.09.02 — 전역자금 플래너로 확장한 팀 프로젝트
+2025.06 - 2025.08 | 4인 팀 프로젝트 | 텍스트 판별 파이프라인 참여
 
-**구현 근거:** [시나리오 API 연동](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/app/src/services/scenario.service.ts) · [팀 채점 엔진](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/services/scenario-server/scoring/engine.py) · [전체 구조와 실행 안내](https://github.com/a77315829-byte/Capstone-ver0.1/blob/main/README.md)
+4인 팀에서 LLM 교정·원문 비교·분류를 연결하는 파이프라인 구현에 참여하고 GPU별 추론 분할을 다뤘습니다. 아래 기술 구성과 대회 결과는 팀 프로젝트의 구현 범위입니다.
 
----
+![AI-Generated Text Detection 처리 흐름](https://raw.githubusercontent.com/a77315829-byte/AI-Generated-Text-Detection/main/docs/portfolio/architecture.png)
 
-## 추가 프로젝트와 개발 경험
+대회 기록 점수 0.78098, 상위 50%입니다. 이 경험을 바탕으로 라오스 SW·AI 교육에서 AI 생성 텍스트 판별 프로젝트 멘토링도 진행했습니다.
 
-AI 모델 개발과 함께 모바일 앱, Unity 클라이언트, 드론 관제 프로그램, 네트워크 게임을 만들며 화면·데이터·외부 시스템을 연결하는 경험을 쌓았습니다.
+[코드 · 화면 · 구현 설명](https://github.com/a77315829-byte/AI-Generated-Text-Detection)
 
-### 05. MOLE — 3D 화학 학습 앱
+## 연구·수상
 
-**2025 · 팀 프로젝트 · 논문 검색 및 공통 UI 담당**  
-Unity · C# · REST API · FastAPI 서버 연동
+- RAISE: Rational-Aware Investment Scoring and Evaluation - 제2저자, PlatCon-26 발표 / Best Paper Award (2026.08).
+- VIMAS: Visual Mission Authoring System for Ground Control Station - 제2저자, PlatCon-26 발표 (2026.08).
+- AI 기반 3차원 시뮬레이션 화학 학습 시스템의 설계 및 구현 - 제2저자, 융복합지식학회 추계 발표 (2025.11).
+- SW Start-Up Festa SW 해커톤 경진대회 총장상 (2026.09), 신한대학교 창업경진대회 금상 (2025.12).
+- FLYHIGH Drone GCS 프로그램 저작권 등록 제C-2026-031893호.
 
-분자 구조 탐색, 화합물 검색, 퀴즈와 논문 검색을 제공하는 Unity 기반 학습 앱입니다. 저는 **논문 검색 화면과 여러 화면에서 사용하는 공통 UI**를 맡았습니다.
+## 협업·교육
 
-- 검색어 입력부터 PubMed 검색·한국어 번역 결과의 카드 표시, 상세 화면 전환까지 연결했습니다.
-- 최신순·관련도순 정렬, 로딩 및 요청 실패 안내와 탭·토글·설정·사운드 UI를 구현했습니다.
-- **2025 창업경진대회 금상**, 융복합지식학회 추계학술발표대회 발표 성과를 냈습니다.
+- ㈜열린문디자인 기업협력 인턴: 초기 MVP 단독 구현, 상담 Agent·대화 맥락 보완, 사내 공동 접속 환경.
+- 라오스국립대학교 SW·AI 교육: Unity 프로젝트와 AI 생성 텍스트 판별 멘토링. 현지 팀 최종 발표 1위.
+- 인천청선학교: 사회복무 이후 교육·돌봄 봉사 299시간.
 
-[저장소 및 담당 기능](https://github.com/a77315829-byte/MOLE) · [본인 담당 코드](https://github.com/a77315829-byte/MOLE/tree/main/MOLE_UNITY/Assets/Jungwoo)
+## 초기 버전과 교과 실습
 
-### 06. FLYHIGH Drone GCS — 드론 지상관제 교육 프로그램
+| 저장소 | 관계 |
+|---|---|
+| [antitude-defense](https://github.com/a77315829-byte/antitude-defense) | ANTITUDE를 국방 주제로 확장한 해커톤 버전 |
+| [yullinmoondesign_](https://github.com/a77315829-byte/yullinmoondesign_) | 업무 조회 도구·장기기억·대화형 견적 수정을 연결한 팀 시스템 |
+| [Capstone-demo](https://github.com/a77315829-byte/Capstone-demo) | STOTRA 기반 화면과 Python 시뮬레이터 연동을 탐색한 초기 버전 |
+| [mobile-app-programming10-2-](https://github.com/a77315829-byte/mobile-app-programming10-2-) | Kotlin UI 이벤트와 Activity 간 데이터 전달 |
+| [homework1](https://github.com/a77315829-byte/homework1) | Switch·RadioGroup·버튼 이벤트로 화면 상태를 제어 |
 
-**2026.06 · 개인 프로젝트 · 단독 개발**  
-Python · Tkinter · pymavlink · ArduPilot SITL · Ollama
+초기·확장 버전은 같은 프로젝트의 발전 과정으로 구분하며 독립 성과로 중복 계산하지 않습니다.
 
-실제 기체 없이 시뮬레이터로 비행 절차와 MAVLink 명령을 익히는 데스크톱 프로그램을 개발했습니다.
-
-- 시뮬레이터 실행·연결, 기체 상태 HUD, 지도 기반 이동, ARM·이륙·복귀 명령과 단계별 안내를 통합했습니다.
-- 자연어 요청에 따른 고도 후보 비교, 교육용 배터리 소모 추정, 실습 이력의 CSV 저장 기능을 구현했습니다. 로컬 LLM을 사용할 수 없을 때는 규칙 기반 분석으로 동작합니다.
-- **프로그램 저작권 등록 제C-2026-031893호**. 교육용 시뮬레이션 프로젝트이며, 실제 기체 운용 검증과는 구분합니다.
-
-[저장소 및 실행 안내](https://github.com/a77315829-byte/flyhigh-drone-gcs) · [프로그램 코드](https://github.com/a77315829-byte/flyhigh-drone-gcs/blob/main/flyhigh_gcs.py)
-
-### 07. SoccerMirrorGame — AI와 사람이 함께하는 멀티플레이 축구
-
-**2026.01 · 라오스 SW·AI 교육 파견 및 프로젝트 멘토링**  
-Unity · C# · ML-Agents · Mirror
-
-라오스국립대학교 학생 대상 SW·AI 교육에서 AI 생성 텍스트 판별 실습과 축구 게임 프로젝트 멘토링을 진행했습니다.
-
-- 학습된 AI 에이전트와 사람이 같은 경기에서 움직이도록 ML-Agents와 Mirror 네트워크 환경을 연결한 프로젝트입니다.
-- 물리 연산과 득점 판정을 호스트에서 처리해 AI와 사람이 같은 경기 규칙을 공유하도록 구성했습니다.
-- **멘토링한 현지 팀이 최종 발표 1위**를 기록했습니다.
-
-[프로젝트 코드](https://github.com/a77315829-byte/SoccerMirrorGame)
-
-### 08. 댕댕가이드 — 반려견 정보 모바일 앱
-
-**교내 모바일앱 프로그래밍 프로젝트 참여**  
-Flutter · Dart · REST API
-
-견종 정보와 반려견 관련 콘텐츠를 확인하는 모바일 앱 프로젝트에 참여했습니다. 앱에는 **견종 목록·상세 정보, 조건별 필터, 반려견 성향 테스트, 커뮤니티 게시판**이 구현돼 있습니다. Flutter 화면과 서버 API를 연결한 모바일 서비스 개발 경험입니다.
-
-[팀 저장소](https://github.com/DanmmGuide/dang) · [앱 화면 코드](https://github.com/DanmmGuide/dang/tree/HEAD/lib/pages)
-
-### 09. AI 생성 텍스트 판별 — DACON
-
-**2025.06 ~ 2025.08 · 4인 팀 프로젝트**  
-Python · PyTorch · KULLM · BARTScore · KoELECTRA
-
-한국어 텍스트를 사람이 작성했는지 LLM이 생성했는지 분류하는 대회에 참여했습니다. 팀에서는 **LLM 교정 → 원문·교정문 비교 → KoELECTRA 분류** 흐름을 구현하고, GPU별로 데이터를 나눠 추론하는 파이프라인을 구성했습니다. 대회 기록 점수는 **0.78098, 상위 50%**입니다.
-
-[저장소 및 대회 기록](https://github.com/a77315829-byte/AI-Generated-Text-Detection)
-
-### 프로토타입과 교과 실습
-
-| 프로젝트 | 구현·학습 내용 | 코드 |
-|---|---|---|
-| 주식 교육 서비스 초기 프로토타입 | 기존 STOTRA를 바탕으로 교육 화면과 Python 시뮬레이터 연동을 탐색한 ANTITUDE의 초기 버전. React·TypeScript·Node.js·FastAPI 활용 | [Capstone-demo](https://github.com/a77315829-byte/Capstone-demo) |
-| 명화 선호도 투표 앱 | Kotlin Android 실습. 이미지별 투표 집계, Intent로 화면 간 데이터 전달, RatingBar와 최다 득표 이미지 표시 | [mobile-app-programming10-2-](https://github.com/a77315829-byte/mobile-app-programming10-2-) |
-| Android UI 이벤트 실습 | Kotlin의 Switch·RadioGroup 선택에 따른 화면 표시와 이미지 변경, 초기화·종료 이벤트 구현 | [homework1](https://github.com/a77315829-byte/homework1) |
-
----
-
-## 다음 학습 방향
-
-Language AI에서 쌓은 데이터 처리·모델 검증·서비스 연결 경험을 바탕으로, 주문·재고·이동 데이터와 운영 제약을 이해하는 예측·최적화 과제로 역량을 넓히고자 합니다. 물류 최적화와 GNN은 앞으로 학습하고 적용할 분야이며, 수행한 프로젝트와 구분합니다.
-
----
-
-기준일: 2026.09.27. 실험 수치는 각 저장소에 기록된 결과이며, 재현에 필요한 대회 데이터·모델 가중치·외부 API는 저장소별 안내를 따릅니다. 팀 프로젝트의 성과와 본인 담당 범위는 구분해 기재했습니다.
+프롬프트 도구는 최신 React 화면과 로컬 실행 안내를 제공합니다. 공개 배포 주소는 아직 없으며 이전 Streamlit 링크는 제거했습니다.
